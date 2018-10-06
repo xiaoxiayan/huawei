@@ -58,7 +58,9 @@ h6 {
 a {
 	text-decoration: none;
 }
-
+body{
+	    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
 
 /*头部*/
 
@@ -80,18 +82,23 @@ a {
 	width: 674px;
 	height: 30px;
 	line-height: 30px;
-	display: flex;
-	justify-content: space-around;
+	/*display: flex;
+	justify-content: space-around;*/
 }
-
-.layouLEft li a {
+.layouLEft li{
 	float: left;
-	padding: 0 6px;
+	position: relative;
+}
+.layouLEft li a {
+	padding: 0 8px;
+	float: left;
 	color: #a4a4a4;
+	font-size: 12px;
+
 }
 
-.layouLEft li:nth-child(1) {
-	padding-left: 0;
+#onea{
+	padding-left: 0
 }
 
 .layouLEft li::before {
@@ -100,9 +107,11 @@ a {
 	width: 1px;
 	height: 10px;
 	display: inline-block;
+	position: absolute;
+	top: 10px;
+    	left: 0;
 	/*margin-right:2px;*/
 }
-
 .APP {
 	position: relative;
 }
@@ -140,6 +149,8 @@ a {
 
 .APP:hover .erwei {
 	display: block;
+	background: #fff;
+	z-index: 10;
 }
 
 .morejc:hover.sanjiao {
@@ -158,10 +169,13 @@ a {
 	position: absolute;
 	display: none;
 	right: 0;
+	top: 30px
 }
 
 .morejc:hover .more {
 	display: block;
+	background: #fff;
+	z-index: 10;
 }
 
 .more>div>dt>a {
@@ -184,6 +198,7 @@ a {
 	line-height: 30px;
 	display: flex;
 	justify-content: space-around;
+	font-size: 12px;
 }
 
 .layouRIght .icon {
@@ -191,7 +206,7 @@ a {
 	width: 14px;
 	height: 14px;
 	padding-left: 8px;
-	background: url(../../httpforhuawei/HTTPhuawei/27day_down/img/icon-common.png) no-repeat 0px 0px;
+	background: url(../img/icon-common.png) no-repeat 0px 0px;
 }
 
 .layouRIght li::before {
@@ -261,17 +276,77 @@ a {
 }
 .sousuo form{
 	float: right;
-}
+	border: 1px solid black;	
+}	
 .sousuo input{
-	background: #fff;
-    /*border: 0;*/
+    background: #fff;
+    border: 0;
     color: #3a3a3a;
-    width: 299px;
+    width: 260px;
     padding-left: 10px;
     height: 32px;
     line-height: 32px;
+    display: inline-block;
 }
-/*.headerCenter:hover a{
+.headerCenter a:hover{
 	 color: #ca141d;
 	 border-bottom: #ca141d 3px solid;
-}*/
+}
+#finden{
+	padding-left: 0px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/icon-common.png) no-repeat 0px -21px;
+}
+/*广告*/
+#banner{
+	/*width: 100%;*/
+	position: relative;
+	height: 450px;
+	overflow: hidden;
+	/*background: url(../img/20180928220842913.jpg) no-repeat;*/
+}
+#banner>a>img{
+	position: absolute;
+	left: 50%;
+	margin-left:-960px;
+	height: 450px;
+	/*vertical-align: middle;	*/	
+}
+.bannerbox{
+	height: 450px;
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+/*左边导航的列表*/
+.bannerLeft{
+	width: 240px;
+	height: 450px;
+	background: #54555b;
+	font-size: 14px;
+	position: relative;
+	/*padding-top: 10px;*/
+	line-height: 21px;
+}
+.bannerLeft li{
+	width: 208px;
+	height: 55px;
+	position: relative;
+	padding:10px 16px;
+
+}
+.bannerLeft  a{
+	padding-right:8px; 
+	    color: #999999;
+	    /*position: relative;*/
+}
+.bannerLeft div{
+	width: 7px;
+	height: 15px;
+	background: url(../img/icon-common.png) no-repeat -9px -214px;
+	position: absolute;
+	right: 10px;
+	top: 48%;
+}
+
