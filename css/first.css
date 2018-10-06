@@ -1,51 +1,277 @@
-html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    margin:0;
-    padding:0;
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
 }
-ol,ul {
-    list-style: none
+
+ol,
+ul {
+	list-style: none
 }
-h1, h2, h3, h4, h5, h6{font-weight:normal;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
 a {
- text-decoration:none;
+	text-decoration: none;
+}
+
+
+/*头部*/
+
+#layout {
+	height: 30px;
+	background: black;
+	width: 100%;
+}
+
+.layoutbox {
+	height: 30px;
+	width: 1200px;
+	margin: 0 auto;
+	background: white;
+}
+
+.layouLEft {
+	float: left;
+	width: 674px;
+	height: 30px;
+	line-height: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.layouLEft li a {
+	float: left;
+	padding: 0 6px;
+	color: #a4a4a4;
+}
+
+.layouLEft li:nth-child(1) {
+	padding-left: 0;
+}
+
+.layouLEft li::before {
+	content: " ";
+	background: #e4e4e4;
+	width: 1px;
+	height: 10px;
+	display: inline-block;
+	/*margin-right:2px;*/
+}
+
+.APP {
+	position: relative;
+}
+
+.sanjiao {
+	display: inline-block;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #999;
+	margin-bottom: 1px;
+}
+
+.APP:hover.sanjiao {
+	border-bottom: 6px solid #999;
+	border-top: 0;
+}
+
+.erwei {
+	width: 150px;
+	height: 140px;
+	position: absolute;
+	/*background: #007DFF;*/
+	left: -90px;
+	/*border: 1px solid #007AD9;*/
+}
+
+.erwei {
+	text-align: center;
+	display: none;
+}
+
+.erwei img {
+	margin-top: 20px;
+}
+
+.APP:hover .erwei {
+	display: block;
+}
+
+.morejc:hover.sanjiao {
+	border-bottom: 6px solid #999;
+	border-top: 0;
+}
+
+.morejc {
+	position: relative;
+}
+
+.more {
+	width: 162px;
+	height: 147px;
+	border: 1px solid #ededed;
+	position: absolute;
+	display: none;
+	right: 0;
+}
+
+.morejc:hover .more {
+	display: block;
+}
+
+.more>div>dt>a {
+	float: none;
+	display: block;
+	text-align: center;
+}
+
+.more div {
+	padding: 9px 9px 10px 9px;
+}
+
+
+/*右边*/
+
+.layouRIght {
+	float: right;
+	width: 250px;
+	height: 30px;
+	line-height: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.layouRIght .icon {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	padding-left: 8px;
+	background: url(../../httpforhuawei/HTTPhuawei/27day_down/img/icon-common.png) no-repeat 0px 0px;
+}
+
+.layouRIght li::before {
+	content: " ";
+	background: #e4e4e4;
+	width: 1px;
+	height: 10px;
+	display: inline-block;
+}
+
+.layouRIght li a {
+	float: left;
+	padding: 0 8px;
+	color: #a4a4a4;
+}
+.Shopcar{
+	position: relative;
+}
+.shopcar {
+	position:absolute;
+	width:460px;
+	height:230px;
+	top: 30px;
+    right: 0;
+	text-align: center;
+	font-size: 14px;
+	color: #a4a4a4;
+	border: 1px solid #ededed;
+	text-align:center;
+	display: none;
+}
+.shopcar>img{
+		margin-top:50px
+}
+.Shopcar:hover .shopcar{
+	display: block;
 }
 /*头部*/
-#layout{
-	height:30px;
-	background:black;
-	width:100%;
+.header{
+	height: 70px;
 }
-.layoutbox{
-	height:30px;
+.headerbox {
 	width:1200px;
-	margin:0 auto;
-	background:white;
-}
-.layouLEft{
-	float: left;
-	width:674px;
-	height: 30px;
-	line-height: 30px;
+	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content:space-between;
+	height:50px;
+	padding:10px 0;
+	
 }
-.layouLEft>li{
-	float: left;
-}
-.layouLEft>li>a{
-	color: a4a4a4;
-}
-.layouRIght{
-	float:right;
-	width:250px;
-	height: 30px;
-	line-height: 30px;
+.headerCenter{
+	line-height:50px;
+	font-size: 16px;
+	display: flex; 
+	width:507px;
 	display: flex;
-	justify-content: space-around;
+	justify-content:space-between;
+	
 }
-.layouRIght div{
-	display:inline-block;
-	width:14px;
-	height: 14px;
-	background:url(../../httpforhuawei/HTTPhuawei/27day_down/img/icon-common.png) no-repeat 0px 0px;
+.headerCenter>a>span{
+	color: #3a3a3a;
 }
+.sousuo{
+	width: 330px;
+	height:32px;
+	margin-top:10px;
+}
+.sousuo form{
+	float: right;
+}
+.sousuo input{
+	background: #fff;
+    /*border: 0;*/
+    color: #3a3a3a;
+    width: 299px;
+    padding-left: 10px;
+    height: 32px;
+    line-height: 32px;
+}
+/*.headerCenter:hover a{
+	 color: #ca141d;
+	 border-bottom: #ca141d 3px solid;
+}*/
