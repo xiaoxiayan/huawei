@@ -538,7 +538,132 @@ text-align: center;
 	flex-direction:row;
 	justify-content:space-between;
 }
+/*热销*/
+.HOTBox{
+    width: 1200px;
+    height: 657px;
+    margin: auto;
+}
 /*热销单品*/
+.HOT{
+    width: 1200px;
+    height: 67px;
+    margin: auto;
+}
 .hotTitle{
-    
+     font-weight: 400;
+     color: #3a3a3a;
+    font-size: 22px;
+    margin: 0;
+    padding: 30px 0 15px 0;
+    line-height: 1;
+}
+/*热销内容*/
+.Hotshow{
+    height: 590px;
+        width: 1200px;
+    margin: auto;   
+
+}
+/*左边的大图片*/  
+.hotleft{
+    float: left;
+        width: 232px;
+        height: 590px;
+        transition: all .2s linear 0s;
+}
+
+.hotleft a:hover{
+     transform: translate3d(0px,-2px,0px);
+    z-index: 2
+}
+
+/*右边的图片*/
+
+.hotright{
+        width: 968px;
+        height: 600px;
+        float: left;
+}
+.img2{
+position: absolute;
+    height: 48px;
+    width: 48px;
+    right: 35px;
+    top: 135px;
+    z-index: 2;
+}
+.hotRup>li{
+    background: #FFF;
+    float:left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: all .2s linear 0s;
+    width: 232px;
+    height: 290px;
+    position: relative;
+    text-align: center;
+
+}
+ .img1{
+       width: 148px;
+    height: 148px;
+    margin-top: 28px;
+}
+.hotRup>li:hover{
+     transform: translate3d(0px,-2px,0px);
+    z-index: 2
+}
+.hotRup>li div{
+font-size: 14px;
+    font-weight: 400;
+    margin: 16px 20px 2px;
+    overflow: hidden;
+    color: #3a3a3a;
+    height: 40px;
+    display: table-cell;
+    vertical-align: bottom;
+    width: 259px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.grid-desc{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 20px 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #a4a4a4;
+}
+.hotRup>li>a:last-child{
+    font-size: 14px;
+    font-weight: 400;
+    color: #cc0e11;
+}
+.HOTBigbox{
+background: #f5f5f5;
+}
+
+/*精品推荐*/
+.HOTBigbox{
+    margin: auto;
+}
+.bigjp{
+    width: 1200px;
+    height: 372px;
+
+}   
+.JPbox{
+    width: 1200px;
+    height: 305px;
+    overflow: hidden;
+    margin: auto;
+}
+.JPshow>li{
+    display: inline-block;
+    width: 217px;
+    height: 290px;
+    padding: 0;
+    margin: 0;  
 }
