@@ -66,7 +66,7 @@ body{
 
 #layout {
 	height: 30px;
-	background: black;
+	/*background: black;*/
 	width: 100%;
 }
 
@@ -79,7 +79,7 @@ body{
 
 .layouLEft {
 	float: left;
-	width: 674px;
+	width: 680px;
 	height: 30px;
 	line-height: 30px;
 	/*display: flex;
@@ -94,7 +94,6 @@ body{
 	float: left;
 	color: #a4a4a4;
 	font-size: 12px;
-
 }
 
 #onea{
@@ -209,18 +208,33 @@ body{
 	background: url(../img/icon-common.png) no-repeat 0px 0px;
 }
 
-.layouRIght li::before {
-	content: " ";
-	background: #e4e4e4;
-	width: 1px;
-	height: 10px;
-	display: inline-block;
-}
-
-.layouRIght li a {
+.layouRIght li{
 	float: left;
 	padding: 0 8px;
-	color: #a4a4a4;
+            position: relative;
+
+}
+.layouRIght li a{
+        color: #a4a4a4;
+}
+#landing,#register{
+	padding: 0;
+}
+#register{
+	width: 30px;
+}
+#landing{
+	width: 36px;
+}
+.layouRIght li::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #e4e4e4;
 }
 .Shopcar{
 	position: relative;
@@ -259,11 +273,11 @@ body{
 }
 .headerCenter{
 	line-height:50px;
+	margin-right: 64px;	
 	font-size: 16px;
-	display: flex; 
-	width:507px;
+	width:506px;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	
 }
 .headerCenter>a>span{
@@ -276,7 +290,9 @@ body{
 }
 .sousuo form{
 	float: right;
-	border: 1px solid black;	
+	width: 328px;
+	height: 32px;
+	    border: 1px solid #ddd;
 }	
 .sousuo input{
     background: #fff;
@@ -299,6 +315,7 @@ body{
 	background: url(../img/icon-common.png) no-repeat 0px -21px;
 }
 /*广告*/
+/*左边的导航列表*/
 #banner{
 	/*width: 100%;*/
 	position: relative;
@@ -349,4 +366,179 @@ body{
 	right: 10px;
 	top: 48%;
 }
+.bannerRelative{
+    padding: 20px 28px 20px 40px;
+    width: 580px;
+    height: 450px;
+    line-height: 30px;
+    position: absolute;	
+    letter-spacing: 240px;
+    background: white;
+    top: 0;
+    left: 240px;
+    display: none;
+}
 
+/*轮播图小点*/
+.bannerdown{
+    height: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 300px;
+    margin-left:-80px;
+}
+.bannerdown>li{
+	float: left;
+border: 1px solid white;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    /*display: inline-block;*/
+       margin-left: 10px;	
+           line-height: 10px;
+    text-align: center;
+}
+.bannerLeft>li:hover{
+	background: #3a3a3a;
+}
+.bannerLeft>li:hover a{
+	color: white;
+}
+.bannerLeft>li:hover .bannerRelative{
+	display: block;
+}
+
+/*第三行*/
+#threeH{
+	width: 100%;
+	height: 98px;
+}
+.threeHbox{
+	height: 98px;
+	width: 1200px;
+	margin: auto;
+	border: 1px solid #eaeaea;
+	border-top:none;
+}
+/*左边盒子*/
+.THleft{
+	width: 248px;
+  	  height: 65px;
+        padding: 0 18px 7px 22px;
+            text-align: left;
+            margin-top: 13px;
+            float: left;
+}
+.THleft>img{
+	width: 59px;
+	height: 59px;
+	float: left;
+}
+.THLr{
+	width: 168px;
+	height: 64px;
+	float: right;
+}
+.THLr>p{	
+	height: 30px;	
+	margin: 8px;
+	    font-size: 12px;
+    color: #a4a4a4;
+    line-height: 1.3;
+    width: 168px;
+}
+.THLrightdown>a{
+    font-size: 12px;
+      display: inline-block;
+    width: 58px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #ca141d;
+    background: #FFF;
+    color: #ca141d;
+    margin-right: 10px;
+}
+
+/*中间盒子*/
+.THcenter{
+	float: left;
+	    margin-top: 13px;
+}
+
+.THcenter li{
+height: 62px;
+    width: 100px;
+    text-align: center;
+    padding-top: 8px;
+    float: left;
+
+}
+.THcenter li>div{
+	margin: 0 30px;	
+width: 40px ;
+height: 40px;	
+background: url(../img/127bb15656845473af220df1aae91462.png) no-repeat 0 0;
+}
+/*右边盒子*/
+.THright{
+	float: left;
+	width: 302px;
+	height: 98px;
+
+}
+.THRup>div{
+height: 48px;
+    line-height: 48px;
+    width: 58px;
+    float: left;	
+text-align: center;
+
+}
+#THRUPLI{
+ height: 48px;
+    overflow: hidden;
+    text-align: left;
+    width: 243px;
+    position: relative;
+}
+.THRup>ul{
+float: left;
+text-align: center;
+/*border-bottom: 1px solid blue;*/
+ height: 240px;	
+}
+.THRdown a{
+	float: left;
+	text-align: center;
+	display: inline-block;
+	width: 100px;
+	height: 48px;
+}
+/*宽度盒子*/
+.kd{
+	width: 1200px;
+	height: 12px;
+	margin: auto;
+
+}
+/*z展示*/
+#show{
+	width: 1200px;
+	height: 160px;
+	margin: auto;
+
+}
+#show>ul{
+	width: 1200	px;
+	height: 160px;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+/*热销单品*/
+.hotTitle{
+    
+}
