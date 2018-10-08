@@ -660,6 +660,7 @@ background: #f5f5f5;
     height: 305px;
     overflow:hidden;
     margin: auto;
+    position: relative;
 }
 .JPshow{
 	width: 6827px;
@@ -671,10 +672,63 @@ background: #f5f5f5;
     padding: 0;
     margin: 0;  
 }
+/*两个小按钮*/
 .JPbox>p{
 	width: 22px;
 	height: 75px;
-	background: #f0f0f0;
+	background:#f0f0f0;
+	position:absolute;
+	top:40%;
+	z-index: 10;
+}
+.JPboxL{
+	left:0;
+}
+/*加不上大小*/
+.JPboxL span{
+	height:11px!important;
+	width:16px!important;
+	text-align:center;
+	background: url(../img/icon-common.png) no-repeat /*-102px 2px*/;
+}
+.JPboxR{
+	right:0;
+}
+/*撑距离的盒子*/
+.CGD{
+	height: 10px;
+}
+/*又一个轮播图*/
+.lunbotu{
+	width: 1200px;
+	height: 120px;
+	overflow: hidden;
+	position:relative;
+	margin: auto;
 	
+}
+.LBT_IMG{
+	width: 10000px;
+}
+.lunbotu li{
+	display: inline-block;
 	
+}
+.LBT_dian{
+    height: 13px;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 250px;
+    margin-left: 228px;
+    
+}
+.LBT_dian li{
+	border-radius: 10px;
+    height: 10px;
+    line-height: 10px;
+    margin-left: 6px;
+    width: 10px;
+    background: #0077D2;
 }
