@@ -85,6 +85,7 @@ background: #b7b7b7;
     left: 26px;
     width: 14px;
     height: 17px;
+    background:none;
 }
 .TBheader>span{
 	float:right;
@@ -92,10 +93,13 @@ background: #b7b7b7;
 	text-align:center;
 	font-size: 14px;
 	line-height: 35px;
+	width:125px;
 }
 .TBheader>span>a{
 	background:none!important;
 	float:none!important;
+	margin-right:0!important;
+	color: #007dff;
 }
 .ar-eg-opposite{
 	color: #007dff;
@@ -111,22 +115,38 @@ color: #333;
 padding-top:40px;
 
 }
-
 .form{
 	width: 420px;
 	height: 424px;
 	text-align: center;
 	margin: auto;
 }
+.form>div{
+	background:#f7f7f7;
+}
 .selectCountry{
-	width: 295px;
+	border-radius: 21px;
+	width: 420px;
 	height: 42px;
+	border:1px solid #d9d9d9;
+	    font-size: 14PX;
 }
 .SCleft{
-	width: 90px;
+	width: 122px;
 	line-height: 42px;
-	display:inline-block;
+	text-align: center;
+	    border-right: 1px solid #d9d9d9;
+	
+	/*display:inline-block;*/
 }
 .SCcenter{
-	
+	/*display:inline-block;*/
+	line-height: 42px;
+	width:180px;
+}
+.SCright{
+	width:25px;
+}
+.CCR{
+	float: left;
 }
