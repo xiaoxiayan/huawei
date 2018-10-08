@@ -652,13 +652,17 @@ background: #f5f5f5;
 .bigjp{
     width: 1200px;
     height: 372px;
+    margin: auto;
 
 }   
 .JPbox{
     width: 1200px;
     height: 305px;
-    overflow: hidden;
+    overflow:hidden;
     margin: auto;
+}
+.JPshow{
+	width: 6827px;
 }
 .JPshow>li{
     display: inline-block;
@@ -666,4 +670,11 @@ background: #f5f5f5;
     height: 290px;
     padding: 0;
     margin: 0;  
+}
+.JPbox>p{
+	width: 22px;
+	height: 75px;
+	background: #f0f0f0;
+	
+	
 }
