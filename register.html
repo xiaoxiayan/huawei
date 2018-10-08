@@ -14,7 +14,7 @@
 				<img src="img/head-top.png"/>
 			</div>
 			<div class="LGname">
-			<b style="font-size: 18px;margin-top: -5px;float: left;color:#cccccc;">|</b>
+			<p style="font-size: 18px;margin-top: -5px;float: left;color:#cccccc;margin-left:17px;">|</p>
 			<p style="font-size: 18px;margin-top: -3px;float: left; margin-left:18px;color: white;">华为商城</p>
 			</div>
 		</div>
@@ -31,8 +31,21 @@
 				</span>
 				
 			</div>
+			<!--表单-->
 			<div class="TBbody">
-				<form action="" method="post">
+				<form action="" method="post" class="form">
+					<!--选择国家-->
+					<!--用了点击事件。下拉表单-->
+					<div class="selectCountry">
+						<div class="SCleft">国 家 / 地 区</div>
+						<div class="SCcenter">中国</div>
+						<div class="SCright"></div>		
+					</div>
+					<!--输入手机号-->
+					<div>
+						<div> </div>
+						<input type="number" name="phone" id="phone" value="" placeholder="请输出手机号"/>
+					</div>
 					
 					<!--<input type="submit" value=""/>-->
 				</form>

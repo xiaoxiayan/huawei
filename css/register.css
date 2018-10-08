@@ -28,6 +28,7 @@ h6 {
 }
 .LOGO{
 	display: inline-block;
+	margin-left:4px;
 }
 
 .LGname{
@@ -61,9 +62,16 @@ h6 {
 	display:inline-block;
 	position:relative;
 }
+.TBheader>a>span{
+	margin-left:50px;
+	width:66px;
+	height:35px;
+	display:block;
+}
 .TBheader a:nth-child(1){
 	background:#B40707;
 	float: left;
+	margin-right: 12px;
 }
 .TBheader a:nth-child(2)
 {
@@ -71,10 +79,11 @@ h6 {
 background: #b7b7b7;
 }
 .iconfont{
-	    position: absolute;
-    top: 9px;
-    left: 16px;
-    width: 22px;
+	font-size:22px;
+	position: absolute;
+    /*top: 6px;*/
+    left: 26px;
+    width: 14px;
     height: 17px;
 }
 .TBheader>span{
@@ -90,5 +99,34 @@ background: #b7b7b7;
 }
 .ar-eg-opposite{
 	color: #007dff;
-	    font-size: 14px;
+	font-size: 14px;
+}
+/*表单盒子*/
+.TBbody{
+width: 960px;
+height: 454px;
+margin:auto;
+background: #FFF;
+color: #333;
+padding-top:40px;
+
+}
+
+.form{
+	width: 420px;
+	height: 424px;
+	text-align: center;
+	margin: auto;
+}
+.selectCountry{
+	width: 295px;
+	height: 42px;
+}
+.SCleft{
+	width: 90px;
+	line-height: 42px;
+	display:inline-block;
+}
+.SCcenter{
+	
 }
