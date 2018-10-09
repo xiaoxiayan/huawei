@@ -1,0 +1,85 @@
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+body{
+	    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+em{
+	font-style: normal;	
+}
+/*足部*/
+ter{
+	width: 960px;
+	padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: auto;
+}
+.TBfooter>p{
+	line-height: 24px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+}
+.TBfooter>p>a{
+	    font-size: 12px;
+    color: #999;
+        padding: 0 10px;	
+}
