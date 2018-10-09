@@ -98,20 +98,79 @@ em {
 .state {
 	width: 100%;
 	height: 40px;
-	line-height:40px;
+	line-height: 40px;
 	text-align: center;
 	color: #989898;
-	background:#FFFBE4;
-	font-size:12px;
+	background: #FFFBE4;
+	font-size: 12px;
 }
-.state i{
-	font-size:12px;
+
+.state>span {
+	width: 592px;
 }
+
+.state i {
+	font-size: 13px;
+	padding-right: 5px;
+}
+
+
+/*中间主体*/
+
+.tbody {
+	height: 590px;
+	width: 100%;
+	background-color: #081638;
+}
+
+.tbody_box {
+	background: url(../img/login_default_bg.png) no-repeat;
+	height: 590px;
+	width: 1130px;
+	margin: auto;
+	/*position: relative;*/
+}
+
+.landing {
+	width: 380px;
+	height: 530px;
+	background: #fff;
+	margin-top: 30px;
+	position: relative;
+	float: right;
+}
+
+.landingTop {
+	height: 68px;
+}
+
+input::-webkit-input-placeholder {
+	color: rgb(204, 204, 204)
+}
+
+.landingTop>p {
+	text-align: center;
+	line-height: 20px;
+	font-weight: 500;
+	width: 189px;
+	font-size: 20px;
+	display: inline-block;
+	margin: 24px 0;
+}
+
+.landingTop p:nth-child(1) {
+	border-right: 1px solid #ccc;
+}
+/*账号登录的界面*/
+input{
+	display:block;
+}
+
 
 /*足部*/
 
-ter {
-	width: 960px;
+.TBfooter {
+	/*width: 960px;*/
 	padding-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
