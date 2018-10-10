@@ -42,7 +42,7 @@ section {
 }
 
 ol,
-ul {
+ul,li {
 	list-style: none
 }
 
@@ -116,7 +116,6 @@ em {
 
 
 /*中间主体*/
-
 .tbody {
 	height: 590px;
 	width: 100%;
@@ -130,7 +129,6 @@ em {
 	margin: auto;
 	/*position: relative;*/
 }
-
 .landing {
 	width: 380px;
 	height: 530px;
@@ -142,11 +140,9 @@ em {
 
 .landingTop {
 	height: 68px;
+	width: 380px;
 }
 
-input::-webkit-input-placeholder {
-	color: rgb(204, 204, 204)
-}
 
 .landingTop>p {
 	text-align: center;
@@ -154,19 +150,214 @@ input::-webkit-input-placeholder {
 	font-weight: 500;
 	width: 189px;
 	font-size: 20px;
-	display: inline-block;
 	margin: 24px 0;
+	height: 20px;
+	float: left;
+	line-height: 20px;
 }
-
 .landingTop p:nth-child(1) {
 	border-right: 1px solid #ccc;
 }
 /*账号登录的界面*/
-input{
-	display:block;
+/*账号密码登录的盒子*/
+input::-webkit-input-placeholder {
+	color: rgb(204, 204, 204)
 }
+.landingLeft{
+	position:absolute;
+	height:462px;
+	width:328px;
+	left:26px;
+	top: 68px;
+	
+}
+/*提示盒子*/
+.alert{
+	height: 14px;
+	line-height: 14px;
+}
+#username,#password{
+	/*display:block;*/	
+	width:328px;
+	outline:none;
+	height: 46px;
+	border:none;
+	line-height:46px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+.landingLeft>span{
+	display: block;
+	position: relative;
+	padding:16px 0;
+	padding-left:12px ;
+	color:#007dff;
+}
+.landingLeft>span>img{
+	position:absolute;
+	left:-6px;
+}
+/*摁扭*/
+#submit{
+	width: 328px;
+	line-height: 44px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: none;
+    cursor: pointer;
+    border-radius: 26px;
+    text-align: center;
+    margin-top: 0px;
+        background-color: #B40707;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #B40707;
+    color: #fff;
+}
+/*更多*/
+.more{
+	height: 48px;
+	line-height:48px;
+}
+.morebox{
+	position:relative;
+	float: left;
+}
+.notice{
+	position:absolute;
+	display: none;
+	top:-50px;
+	width:300px;
+	background: #fff;
+	height:50px;
+	line-height: 10px;
+	left:15px;
+}
+.more_click{
+	float:right;
+	position: relative;
+}
+.more_onclick{
+	position:absolute;
+	top: 36px;
+    right: 14px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    width:75px;
+    height: 146px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #000;
+    display: none;
+}
+.more_onclick li:nth-child(1){
+	    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.more_onclick li:nth-child(2){
+	  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.morebox:hover .notice{
+	display: block;
+}
+/*忘记密码*/
+.wangjimima{
+    height: 12px;
+	width:328px;
+	/*text-align: center;*/
+}
+.wangjimima>span>a{
+	color: #007dff;
+	line-height: 12px;
+	height: 12px;
+	font-size: 12px;	
+}
+.regist{
+	padding-right:10px;
+	border-right: 1px solid #cccccc;
+}
+.forget{
+	margin-left:10px;
+}
+.otherland{
+	height: 82px;
+	position: absolute;
+	bottom:0;
+	width: 328px;
+}
+.otherLandUp{
+	height: 18px;
+	line-height: 18px;
+	color: #cccccc;
+    vertical-align: middle;
+    text-align: center;
+}
+.otherLandDown{
+	height: 44px;
+	text-align: center;
+}
+.otherLandDown a{
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin:0 10px
+}
+.otherLandDown a:nth-child(1){
+	background: url(../img/third_login.png)-72px -9px;
+}
+.otherLandDown a:nth-child(2){
+	background: url(../img/third_login.png)-132px -9px;
+}
+.otherLandDown a:nth-child(3){
+	background: url(../img/third_login.png)-12px -9px;
+}
+.otherLandDown a:nth-child(1):hover{
+	    background-position: -72px -55px;
+}
+.otherLandDown a:nth-child(2):hover{
+	background-position:-132px -55px;
+}
+.otherLandDown a:nth-child(3):hover{
+	background-position: -12px -55px;
+}
+/*扫码登录界面*/
+.landingRight{
+	position:absolute;
+	height:462px;
+	width:380px;
+	top: 68px;
+	text-align: center;
+	display:none;
+}
+.EWM{
+	width:380px;
+	height:318px;
+	position: relative;
 
-
+}
+.EWM>img{
+	position:absolute;
+	top:83px;
+	left:115px;
+}
+.noticebox{
+	width: 130px;
+	height: 214px;
+	position:absolute;
+	right: 19px;
+	top: 50px;
+	opacity: 0;
+	transform:2s;	
+}
+/*下面两行*/
+.haweiapp{
+		color:#007dff;
+}
+.landingRight div:nth-child(2)>p{
+	height: 13px;
+	padding: 5px 0;
+}
 /*足部*/
 
 .TBfooter {

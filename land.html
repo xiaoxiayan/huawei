@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863774_d1vrlrlmmxv.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_866670_w10y2ka11m.css" />
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863774_d1vrlrlmmxv.css" />
 		<link rel="stylesheet" type="text/css" href="css/land.css" />
 	</head>
 
@@ -24,24 +25,69 @@
 			<span><i class="iconfont HW-gantanhao"></i> 依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
 		</div>
 		<!--中间主体-->
-		<div class="tbody"> 
-			<div class="tbody_box">
-				<div class="landing" >
+		<div class="tbody">
+			<form class="tbody_box" method="get">
+				<div class="landing">
 					<!--第一行-->
-					<div class="landingTop"> <p>帐号登录</p><p>扫码登陆</p></div>
+					<div class="landingTop">
+						<p class="landOfZH">帐号登录</p>
+						<p class="landOfEWM">扫码登录</p>
+					</div>
 					<!--账号登录的盒子-->
 					<div class="landingLeft">
-						<input type="text" name="" id="" placeholder="手机号/邮件地址" autocomplete="off"/>
-						<input type="password" name="" id="" placeholder="密码"autocomplete="off" />
+						<div class="alert"></div>
+						<input type="text" name="username" id="username" placeholder="手机号/邮件地址" autocomplete="off" />
+						<input type="password" name="password" id="password" placeholder="密码" autocomplete="off" />
 						<span><img src="img/ic_smsLogin.png"/>短信验证码登录</span>
+						<input type="submit" name="" id="submit" value="登录" />
+						<div class="more">
+							
+							<div class="morebox"><div class="notice">在公用电脑上不要选择此项，推荐在个人电脑上选择此项。</div><i class="iconfont icon-yunxingouxuankuang- dagou"></i>记住华为帐号</div>
+							<span class="more_click">更多
+							<div class="more_onclick">
+							<li>遇到问题</li>
+							<li>更换手机号</li>
+							<li>安全中心</li>
+							</div>
+							</span>
+						</div>
+						<div class="wangjimima">
+							<span class="regist"><a href="register.html">注册账号</a></span>
+							<span class="forget">
+								<a href="">忘记密码?</a>
+							</span>
+						</div>
+						<!--其他登录方式-->
+						<div class="otherland">
+							<div class="otherLandUp">
+								其他方式登录
+							</div>
+							<div class="otherLandDown">
+								<a href=""></a>
+								<a href=""></a>
+								<a href=""></a>								
+							</div>
+						</div>
 					</div>
 					<!--扫码登录的盒子-->
 					<div class="landingRight">
+						<!--二维码-->
+						<div class="EWM">
+							<img src="img/getqrWeb.png"/>
+							<div class="noticebox">
+								<img src="img/qrCode-help.png"/>
+							</div>
+						</div>
+						<!--下面两行-->
+						<div>
+							<p>使用<span class="haweiapp">华为移动服务APP</span>扫一扫</p>
+							<p>若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。</p>
+						</div>
 					</div>
 					<!--手机短信登录的盒子-->
 					<div class="landingCenter"></div>
 				</div>
-			</div>
+			</form>
 		</div>
 		<div class="TBfooter">
 			<p>
@@ -52,8 +98,9 @@
 			<p>
 				Copyright&nbsp;©&nbsp;2011-2018&nbsp;&nbsp;华为软件技术有限公司&nbsp;&nbsp;版权所有&nbsp;&nbsp;保留一切权利&nbsp;&nbsp;苏B2-20070200号&nbsp;|&nbsp;苏ICP备09062682号-9
 			</p>
-			
-		</div>
-	</body>
 
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script src="js/land.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>
