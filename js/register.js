@@ -15,7 +15,16 @@ $(function(){
 			$(".phoneover").css("display","block")
 		}
 		else{
-			$.post("http://localhost:2048/huawei/php/register.php",{username:$("#phone").val(),password:$("#password").val()})
+			console.log($("#phone").val(),$("#password").val())
+			var parmes={
+				method:'post',
+				username:$("#phone").val(),
+				password:$("#password").val(),
+				success:function(){
+					
+				}
+			}
+			sendAjax("http://localhost/huawei/php/register.php",parmes)
 		}
 		
 			

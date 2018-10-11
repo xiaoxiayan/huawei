@@ -30,6 +30,7 @@
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status == 200) {
             var data = xhr.responseText;
+            console.log(data);
             _default["success"] && _default["success"](data);
         }
     };

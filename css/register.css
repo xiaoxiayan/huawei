@@ -269,7 +269,7 @@ border-bottom: 1px solid #CCCCCC;
 	margin-left:8px;
 	background:url(../img/triangle_gray.png);
 }
-#phone,#password,#password2,aa{
+#phone,#password,#password2,#a1,#a2{
 	width:150px;
 	height:40px;
 	border:none;
@@ -277,8 +277,6 @@ border-bottom: 1px solid #CCCCCC;
 	background: #f7f7f7;
 	outline:none;
 }
-
-
 input::-webkit-input-placeholde{
 	color:rgb(204, 204, 204);
 }
