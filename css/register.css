@@ -48,7 +48,10 @@ body {
 a {
 	text-decoration: none;
 }
-
+ol,
+ul,li {
+	list-style: none
+}
 h1,
 h2,
 h3,
@@ -161,7 +164,6 @@ em{
 	margin-right: 0!important;
 	color: #007dff;
 }
-
 .ar-eg-opposite {
 	color: #007dff;
 	font-size: 14px;
@@ -193,13 +195,28 @@ em{
 .selectCountry {
 	position: relative;
 }
-
-
+.change{
+	width: 295px;
+	height: 151px;
+	overflow: auto;
+	position:absolute;
+	background:#FFFBE4;
+	z-index:10;
+}
+.change>li{
+width:51px;
+height: 15px;
+font-size: 15px;
+padding: 8px 16px;
+overflow: hidden;
+line-height: 1;
+}
 
 
 /*相同css*/
 
 .SCCR {
+	position:relative;
 	border-radius: 21px;
 	width: 418px;
 	height: 42px;

@@ -1,0 +1,5 @@
+$(function(){
+	$(".SCcenter").click(function(){
+		
+	})
+})
