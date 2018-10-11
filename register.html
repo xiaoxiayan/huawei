@@ -33,23 +33,23 @@
 			</div>
 			<!--表单-->
 			<div class="TBbody">
-				<form action="" method="post" class="form">
+				<form action="" method="post" class="form" onsubmit="return false">
 					<!--选择国家-->
 					<!--用了点击事件。下拉表单-->
 					<div class="selectCountry SCCR">
 						<div class="SCleft CCR twoleft">国家/地区</div>
 						<div class="SCcenter CCR"><span>中国</span>
 							<ul class="change">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li>阿尔巴尼亚</li>
+							<li>阿尔及利亚</li>
+							<li>阿富汗</li>
+							<li>阿根廷</li>
+							<li>阿拉伯联合酋长国</li>
+							<li>阿鲁巴</li>
+							<li>巴哈马</li>
+							<li>中国</li>
+							<li>梵蒂冈</li>
+							<li>斐济</li>
 							</ul>
 						</div>
 						<div class="SCright CCR SCR"></div>		
@@ -62,6 +62,7 @@
 						</div>
 						<input type="text" class="CCR" id="phone" value="" placeholder="请输出手机号" autocomplete="off"/>
 					</div>
+					<div class="phoneover" style="width:338px;color: red;height: 12px;margin-top:4px;padding:0 16px;text-align: left;background: #fff;display: none;">手机号已经被注册</div>
 					<!--获取图片验证码-->
 					<div class="SCCR scone">
 						<div class="SCleft CCR twoleft">
@@ -85,16 +86,16 @@
 						<div class="SCleft CCR twoleft">
 						密码
 						</div>
-						<input type="text" class="CCR" id="phone" value="" placeholder="请输入密码" autocomplete="off"/>
+						<input type="password" class="CCR" id="password" value="" placeholder="请输入密码" autocomplete="off"/>
 											
 					</div>
 					<div class="SCCR">
 						<div class="SCleft CCR twoleft">
-						确认密码
+						确认密码	
 						</div>
-						<input type="text" class="CCR" id="phone" value="" placeholder="请再次输入密码" autocomplete="off"/>
-											
+						<input type="password" class="CCR" id="password2" value="" placeholder="请再次输入密码" autocomplete="off"/>
 					</div>
+					<div class="passover" style="width:338px;color: red;height: 12px;margin-top:4px;padding:0 16px;text-align: left;background: #fff;display: none;">两次密码不一致</div>
 					<input type="submit" value="注册" class="zc scone"/>
 				</form>
 				<!--底部的线-->

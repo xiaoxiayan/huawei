@@ -202,14 +202,16 @@ em{
 	position:absolute;
 	background:#FFFBE4;
 	z-index:10;
+	display: none;
 }
 .change>li{
-width:51px;
+width:151px;
 height: 15px;
 font-size: 15px;
 padding: 8px 16px;
 overflow: hidden;
 line-height: 1;
+border-bottom: 1px solid #CCCCCC;
 }
 
 
@@ -268,7 +270,7 @@ line-height: 1;
 	margin-left:8px;
 	background:url(../img/triangle_gray.png);
 }
-#phone{
+#phone,#password,#password2{
 	width:150px;
 	height:40px;
 	border:none;
@@ -276,6 +278,8 @@ line-height: 1;
 	background: #f7f7f7;
 	outline:none;
 }
+
+
 input::-webkit-input-placeholde{
 	color:rgb(204, 204, 204);
 }
@@ -291,6 +295,7 @@ input::-webkit-input-placeholde{
 	float:left;
 	font-size:14px;
 }
+
 .scone{
 	margin-top: 30px;
 }
@@ -301,7 +306,6 @@ input::-webkit-input-placeholde{
     border: 1px solid #ccc;
     border-radius: 20px;
     color: #fff;
-    
     }
 .zc:hover{
 	    background-color: #B40706;
