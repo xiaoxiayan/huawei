@@ -162,7 +162,7 @@ em {
 /*账号密码登录的盒子*/
 input::-webkit-input-placeholder {
 	color: rgb(204, 204, 204)
-}
+}	
 .landingLeft{
 	position:absolute;
 	height:462px;
@@ -177,6 +177,7 @@ input::-webkit-input-placeholder {
 	line-height: 14px;
 }
 #username,#password{
+	
 	/*display:block;*/	
 	width:328px;
 	outline:none;
@@ -185,6 +186,7 @@ input::-webkit-input-placeholder {
 	line-height:46px;
 	border-bottom: 1px solid rgb(204, 204, 204);
 }
+
 .landingLeft>span{
 	display: block;
 	position: relative;
@@ -336,10 +338,14 @@ input::-webkit-input-placeholder {
 	position: relative;
 
 }
-.EWM>img{
+#img_box{
+	width: 150px;
+	height: 150px;
+	padding: 5px;
+	border: 1px solid #CCCCCC;
 	position:absolute;
-	top:83px;
-	left:115px;
+	top:70px;
+	left:108px;
 }
 .noticebox{
 	width: 130px;

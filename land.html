@@ -26,7 +26,7 @@
 		</div>
 		<!--中间主体-->
 		<div class="tbody">
-			<form class="tbody_box" method="get">
+			<form class="tbody_box" method="post";>
 				<div class="landing">
 					<!--第一行-->
 					<div class="landingTop">
@@ -35,13 +35,14 @@
 					</div>
 					<!--账号登录的盒子-->
 					<div class="landingLeft">
-						<div class="alert"></div>
-						<input type="text" name="username" id="username" placeholder="手机号/邮件地址" autocomplete="off" />
-						<input type="password" name="password" id="password" placeholder="密码" autocomplete="off" />
-						<span><img src="img/ic_smsLogin.png"/>短信验证码登录</span>
-						<input type="submit" name="" id="submit" value="登录" />
+						<!--<form onsubmit="return false" method="post" >-->
+							<div class="alert"></div>
+							<input type="text" name="username" id="username" placeholder="手机号/邮件地址" autocomplete="off" />
+							<input type="password" name="password" id="password" placeholder="密码" autocomplete="off" maxlength="32" />
+							<span><img src="img/ic_smsLogin.png"/>短信验证码登录</span>
+							<input type="submit" name="" id="submit" value="登录"/>
+						<!--</form>-->
 						<div class="more">
-							
 							<div class="morebox"><div class="notice">在公用电脑上不要选择此项，推荐在个人电脑上选择此项。</div><i class="iconfont icon-yunxingouxuankuang- dagou"></i>记住华为帐号</div>
 							<span class="more_click">更多
 							<div class="more_onclick">
@@ -73,7 +74,9 @@
 					<div class="landingRight">
 						<!--二维码-->
 						<div class="EWM">
+							<div id="img_box">
 							<img src="img/getqrWeb.png"/>
+							</div>
 							<div class="noticebox">
 								<img src="img/qrCode-help.png"/>
 							</div>
@@ -100,7 +103,8 @@
 			</p>
 
 		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-		<script src="js/land.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
+<script src="js/ajax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="js/land.js" type="text/javascript" charset="utf-8"></script>
