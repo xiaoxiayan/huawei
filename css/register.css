@@ -1,4 +1,3 @@
-html,
 body,
 div,
 object,
@@ -270,7 +269,7 @@ border-bottom: 1px solid #CCCCCC;
 	margin-left:8px;
 	background:url(../img/triangle_gray.png);
 }
-#phone,#password,#password2{
+#phone,#password,#password2,aa{
 	width:150px;
 	height:40px;
 	border:none;

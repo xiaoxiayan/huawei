@@ -11,9 +11,14 @@ $(function(){
 		$(".phoneover").css("display","none")
 	})
 	$(".zc").click(function(){
-		if(reg.test($("#phone").val())){
+		if(!reg.test($("#phone").val())){
 			$(".phoneover").css("display","block")
 		}
+		else{
+			$.post("http://localhost:2048/huawei/php/register.php",{username:$("#phone").val(),password:$("#password").val()})
+		}
+		
+			
 	})
 	$("#password2").blur(function(){
 		if($("#password").val() != $("#password2").val()){
