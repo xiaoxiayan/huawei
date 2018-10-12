@@ -561,10 +561,17 @@ text-align: center;
 }
 /*热销内容*/
 .Hotshow{
-    height: 590px;
-        width: 1200px;
+    /*height: 590px;*/
+    width: 1200px;
     margin: auto;   
 
+}
+.Hotshow:after{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
 }
 /*左边的大图片*/  
 .hotleft{
@@ -580,7 +587,6 @@ text-align: center;
 }
 
 /*右边的图片*/
-
 .hotright{
         width: 968px;
         height: 600px;
@@ -750,23 +756,23 @@ background: #f5f5f5;
 /*手机商品详情*/
 .shop_phone{
 	width:1200px;
-	height: 1134px;
 	margin: auto;
+	border-top:0px solid #ccc;
 }
 .phone_title{
 	width: 1200px;
 	height: 38px;
 	line-height: 38px;
+	margin:22px 0 12px 0;
 }
 .f1{
-	width: 48px;
 	font-size: 24px;
 	display: inline-block;
 	float: left;
 }
 .f2{
+	
 	font-size: 16px;
-	width:992px;
 	display: inline-block;
 	height: 36px;
 	line-height: 36px;
@@ -774,7 +780,8 @@ background: #f5f5f5;
 	float: left;
 }
 .f2 span{
-height: 36px;
+	color: #a4a4a4;
+	height: 36px;
 	display: inline-block;
 }
 .f2>a{
@@ -785,4 +792,61 @@ height: 36px;
 .f2 span:hover{
 	border-bottom: 2px solid #ca151d;
 	color:#ca151d;
+}
+.A_MORE{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	color: #ca151e;
+	font-size: 18px;
+	float: right;
+	
+}
+/*手机展示内容*/
+.down{
+	width: 1212px;
+	margin-left: -12px;
+
+}
+
+.down>li{
+	float: left;
+	width: 291px;
+	height: 346px;
+	margin-left: 12px;
+	margin-top: 12px;
+	text-align: center;
+	background: #fff;
+}
+.IMG_down2{
+	height: 18px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+}
+.cost{
+	color:#cc0e11;
+}
+.IMG_down{
+	display: table-cell;
+	height: 40px;
+	vertical-align:bottom;
+    color: #a4a4a4;
+    width: 298px;
+    font-size: 14px;
+font-weight: 400;
+color: #3A3A3A;
+}
+.down>li>a{
+	width: 291px;
+	height: 346px;
+}
+.phoneIMG{
+	margin-top: 36px;
+	position:relative;
+}
+.phoneIMG img:nth-child(2){
+	right:20%;
+}
+.down>li:hover{
+	transform: translate3d(0px,-2px,0px);
 }
