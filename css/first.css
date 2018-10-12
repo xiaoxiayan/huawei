@@ -45,8 +45,7 @@ ol,
 ul {
 	list-style: none
 }
-
-h1,
+\nh1,
 h2,
 h3,
 h4,
@@ -566,6 +565,7 @@ text-align: center;
     margin: auto;   
 
 }
+/*图片全是浮动,高度坍塌了*/
 .Hotshow:after{
 	content: ".";
 	height: 0;
@@ -672,6 +672,14 @@ background: #f5f5f5;
 .JPshow{
 	width: 6827px;
 }
+
+.JPshow:after{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
 .JPshow>li{
     display: inline-block;
     width: 217px;
@@ -751,13 +759,20 @@ background: #f5f5f5;
 }
 /*商品详情。。整个大盒子*/
 .shop{
-	height: 7078px;
+	background:#F5F5F5;
 }
 /*手机商品详情*/
 .shop_phone{
 	width:1200px;
 	margin: auto;
 	border-top:0px solid #ccc;
+}
+.shop_phone:after{
+	content: ".";
+	height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
 }
 .phone_title{
 	width: 1200px;
@@ -849,4 +864,12 @@ color: #3A3A3A;
 }
 .down>li:hover{
 	transform: translate3d(0px,-2px,0px);
+}
+
+/*最后*/
+.songli{
+	width:1200px;
+	height:265px;
+	margin: auto;
+	display: block;
 }
