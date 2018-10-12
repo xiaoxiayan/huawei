@@ -323,12 +323,12 @@ body{
 	overflow: hidden;
 	/*background: url(../img/20180928220842913.jpg) no-repeat;*/
 }
-#banner>a>img{
+#box{
+	width:1200px;
+	height:450px;
 	position: absolute;
 	left: 50%;
 	margin-left:-960px;
-	height: 450px;
-	/*vertical-align: middle;	*/	
 }
 .bannerbox{
 	height: 450px;
@@ -345,6 +345,7 @@ body{
 	position: relative;
 	/*padding-top: 10px;*/
 	line-height: 21px;
+	z-index: 10;
 }
 .bannerLeft li{
 	width: 208px;
@@ -389,17 +390,22 @@ body{
     width: 300px;
     margin-left:-80px;
 }
+.bannerdown>li.current{
+            background:white;
+        }
 .bannerdown>li{
 	float: left;
-border: 1px solid white;
+	border: 1px solid white;
     border-radius: 10px;
     width: 10px;
     height: 10px;
     /*display: inline-block;*/
-       margin-left: 10px;	
-           line-height: 10px;
+    margin-left: 10px;	
+    line-height: 10px;
     text-align: center;
 }
+
+/*左边列表的效果*/
 .bannerLeft>li:hover{
 	background: #3a3a3a;
 }
@@ -665,12 +671,13 @@ background: #f5f5f5;
 .JPbox{
     width: 1200px;
     height: 305px;
-    overflow:hidden;
+    /*overflow:hidden;*/
     margin: auto;
     position: relative;
 }
 .JPshow{
-	width: 6827px;
+	/*width: 6827px;*/
+	position: absolute;
 }
 
 .JPshow:after{
@@ -711,6 +718,17 @@ background: #f5f5f5;
 	display:inline-block;
 	vertical-align: middle;
 	background: url(../img/icon-common.png) no-repeat -102px 2px;
+}
+.JPboxR span{
+	position:absolute;
+	top:40%;
+	left:10%;
+	height:18px!important;
+	width:11px!important;
+	text-align:center;
+	display:inline-block;
+	vertical-align: middle;
+	background: url(../img/icon-common.png) no-repeat -112px 2px;
 }
 .JPboxR{
 	right:0;

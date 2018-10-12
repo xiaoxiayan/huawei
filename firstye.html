@@ -4,6 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>华为商城</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="css/first.css" />
 	</head>
 
@@ -119,11 +121,18 @@
 		</div>
 		<!-- 广告位置 -->
 		<div id="banner">
-			<a href="">
-				<img src="img/20180928220842913.jpg" alt="">
-			</a>
 			<!-- 广告中间的盒子 -->
 			<div class="bannerbox">
+				<ul id="box">
+				<li style="z-index：8"><img src="img/20180928220842913.jpg" alt=""></li>
+				<li style="z-index：7"><img src="img/20181011193442373.jpg" alt="" /></li>
+				<li style="z-index：6"><img src="img/20181010223644229.jpg" alt="" /></li>
+				<li style="z-index：5"><img src="img/20181011234524325.jpg" alt="" /></li>
+				<li style="z-index：4"><img src="img/20181009153727707.jpg" alt="" /></li>
+				<li style="z-index：3"><img src="img/20181012092248178.jpg" alt="" /></li>
+				<li style="z-index：2"><img src="img/20181011170523973.jpg" alt="" /></li>
+				<li style="z-index：1"><img src="img/20181008221601495.jpg" alt="" /></li>
+			</ul>
 				<!-- 左边的列表 -->
 				<ul class="bannerLeft">
 					<li>
@@ -168,17 +177,16 @@
 					</li>
 				</ul>
 				<ul class="bannerdown">
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
 				</ul>
 				<div class="bannerRelative"></div>
-
 			</div>
 		</div>
 		<!-- 第三行 -->
@@ -1596,8 +1604,10 @@
 		</div>
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="js/firstye.js"></script>
 	<script>
 		$(".last").load("public.html");
+
 	</script>
-	<script src="js/firstye.js"></script>
+	
 </html>
