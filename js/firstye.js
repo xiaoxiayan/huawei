@@ -56,18 +56,23 @@ $(function(){
 	$('.JPboxR').on("click",function(){
 		var left =Math.abs(parseInt($(".JPshow").css("left")))+1200
 		if(left<width){
-			
-			$(".JPshow").animate({left:'-=1200px'},'slow');
+			$(".JPshow").animate({left:'-=1200px'},'fast',function(){
+			if(left>width-1200){
+			$(".JPshow").css("left",(-width+1200))
+			console.log(left,width)
+			}	
+			});
 		}
-			if(left>width){
-				$(".JPshow").css("left",(-width))
-			}
+		
+		
 })
 	$('.JPboxL').on("click",function(){
-		$(".JPshow").animate({left:'+=1200px'},'slow');
-		if(parseInt($(".JPshow").css("left"))<=0){
-			
+		var left =Math.abs(parseInt($(".JPshow").css("left")))
+
+		if(left <= 0){
+			return false
 		}
-	
-})
+		$(".JPshow").animate({left:'+=1200px'},'fast');
+		
+	})
 })
