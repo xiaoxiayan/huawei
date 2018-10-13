@@ -45,7 +45,7 @@ ol,
 ul {
 	list-style: none
 }
-\nh1,
+h1,
 h2,
 h3,
 h4,
@@ -59,14 +59,14 @@ a {
 }
 body{
 	background: #f5f5f5;
-	    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 }
 
 /*头部*/
 
 #layout {
 	height: 30px;
-	/*background: black;*/
+	background:#fff;
 	width: 100%;
 }
 
@@ -186,10 +186,7 @@ body{
 .more div {
 	padding: 9px 9px 10px 9px;
 }
-
-
 /*右边*/
-
 .layouRIght {
 	float: right;
 	width: 250px;
@@ -199,7 +196,6 @@ body{
 	justify-content: space-around;
 	font-size: 12px;
 }
-
 .layouRIght .icon {
 	display: inline-block;
 	width: 14px;
@@ -207,7 +203,6 @@ body{
 	padding-left: 8px;
 	background: url(../img/icon-common.png) no-repeat 0px 0px;
 }
-
 .layouRIght li{
 	float: left;
 	padding: 0 8px;
@@ -261,6 +256,7 @@ body{
 /*头部*/
 .header{
 	height: 70px;
+	background: #fff;
 }
 .headerbox {
 	width:1200px;
@@ -303,6 +299,7 @@ body{
     height: 32px;
     line-height: 32px;
     display: inline-block;
+    outline:none;
 }
 .headerCenter a:hover{
 	 color: #ca141d;
@@ -676,7 +673,7 @@ background: #f5f5f5;
     position: relative;
 }
 .JPshow{
-	width: 6763px;
+	width: 10000px;
 	position: absolute;
 }
 
@@ -687,8 +684,8 @@ background: #f5f5f5;
 	visibility: hidden;
 	clear: both;
 }
-.JPshow>li{
-    display: inline-block;
+.JPshow li{
+    display:inline-block;
     width: 217px;
     height: 290px;
     padding: 0;
@@ -707,6 +704,7 @@ background: #f5f5f5;
 	left:0;
 	position: relative;
 }
+
 /*加不上大小*/
 .JPboxL span{
 	position:absolute;
@@ -733,6 +731,7 @@ background: #f5f5f5;
 .JPboxR{
 	right:0;
 }
+
 /*撑距离的盒子*/
 .CGD{
 	height: 10px;
@@ -748,14 +747,15 @@ background: #f5f5f5;
 	overflow: hidden;
 	position:relative;
 	margin: auto;
-	
 }
 .LBT_IMG{
 	width: 10000px;
 }
+.LBT_IMG a{
+	display:inline-block;
+}
 .lunbotu li{
 	display: inline-block;
-	
 }
 .LBT_dian{
     height: 13px;
