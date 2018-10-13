@@ -346,3 +346,96 @@ line-height: 1px;
 	    color: #666;
     font-family: \5FAE\8F6F\96C5\9ED1,\5B8B\4F53;
 }
+/*详情*/
+.details{
+	width: 1200px;
+	height: 614px;
+}
+/*放大镜模块*/
+.magnifying{
+	width: 450px;
+	height: 536px;
+	position: relative;
+}
+.BIG{
+	width: 450PX;
+	height: 450px;
+	position: relative;
+    font-size: 0;
+    overflow: hidden;
+}
+.BIG>img{
+	max-width: 100%;
+    max-height: 100%;
+}
+.fig{
+	position: absolute;
+     left: 0;
+      top:0;
+      width: 150px;
+      height: 150px;
+      background: rgba(0,0,0,0.1);
+      cursor: move;
+      display: none;
+}
+.MAX{
+	position: absolute;
+      left: 450px;
+      top: 0;
+      width: 480px;
+      height: 480px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      display: none;
+}
+.MAX img{
+	 position: absolute;
+      left: 0;
+      top: 0;
+      /*width: 1080px;*/
+}
+ .img-box {
+ 	position: relative;
+ 	width: 450px;
+ 	height: 68px;
+    margin-top: 18px;
+    }
+.img-box>li {
+      display: inline-block;
+      border: 1px solid transparent;
+      margin: 3px 0 0 3px;
+      width: 60px;
+      height: 60px;
+      
+    }
+    .img-box>li img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .img-box>li:hover,
+    .img-box>li.active {
+      border: 1px solid #ca141d;
+    }
+.img-box a{
+position: absolute;
+top: 0;
+width: 30px;
+height: 68px;
+cursor: pointer;
+display: inline-block;
+
+}
+.img-box a:hover{
+	background: #ccc;
+}
+.img-box a:before{
+content: "";
+width: 30px;
+height: 30px;
+display: block;
+margin-top: 19px;
+background: url("../img/icon50.png") no-repeat -48px -29px;;
+}
+.img-box a:nth-of-type(2)::before{
+	background-position: -79px -29px;
+}

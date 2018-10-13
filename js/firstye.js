@@ -50,24 +50,24 @@ $(function(){
 	})();
 	fade.init()
 //	控制精彩推荐
-//$(".JPshow").mouseenter(function(event){
-//	var width =event.target.parentElement.children.length;
-//	var $long = width *217;
-//	console.log($long)
-//	var target = event.target.parentElement
-//	console.log(target)
-//	var _this = $(this)
-//	$('.JPboxR').on("click" ,function(){
-//		var left =Math.abs(parseInt($(".JPshow").css("left")))+1200
-//		if(left<$long){
-//			$(".JPshow").animate({left:'-=1200px'},'fast',function(){
-//			if(left>$long-1200){
-//			$(".JPshow").css("left",(-$long+1250))
-//			$('.JPboxR').css("background","#03267A")
-//			}	
-//			});
-//		}
-//})
+$(".JPshow").mouseenter(function(event){
+	var width =event.target.parentElement.children.length;
+	var $long = width *217;
+	console.log($long)
+	var target = event.target.parentElement
+	console.log(target)
+	var _this = $(this)
+	$('.JPboxR').on("click" ,function(){
+		var left =Math.abs(parseInt($(".JPshow").css("left")))+1200
+		if(left<$long){
+			$(".JPshow").animate({left:'-=1200px'},'fast',function(){
+			if(left>$long-1200){
+			$(".JPshow").css("left",(-$long+1250))
+			$('.JPboxR').css("background","#03267A")
+			}	
+			});
+		}
+})
 //	
 //	
 //})
