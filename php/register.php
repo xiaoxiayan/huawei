@@ -5,10 +5,13 @@
     // 引用另外一个文件
     include "public/connect_db.php";
     // 或去json数据, 请求主体的格式为json格式
-    $json = json_decode(file_get_contents("php://input"));
-    $username = $json -> username;
-    $password = $json -> password;
-    // 链接数据库
+    // $json = file_get_contents("php://input");
+    $username = $_GET["username"];
+    $password = $_GET["password"];
+    // $username = $json -> username;
+    // $password = $json -> password;
+
+    // // 链接数据库
     $coon = new db();
     $sql = "select * from www WHERE username='$username'";
     $insert_sql = "INSERT INTO www (username, `password`) values ('$username','$password')";
@@ -20,7 +23,7 @@
       // 用户名称不存在
       $result = $coon -> Query($insert_sql, 3);
       if($result) {
-        $arr = array("code" => "200", "msg"=>"");
+        $arr = array("code" => "200", "msg"=>"注册成功");
       } else {
         $arr = array("code" => "1000", "msg"=>"未知错误, 注册不成功");
       }

@@ -15,16 +15,31 @@ $(function(){
 			$(".phoneover").css("display","block")
 		}
 		else{
-			console.log($("#phone").val(),$("#password").val())
-			var parmes={
-				method:'post',
-				username:$("#phone").val(),
-				password:$("#password").val(),
-				success:function(){
+			// console.log($("#phone").val(),$("#password").val())
+			// var parmes={
+			// 	method:'GET',
+			// 	username:$("#phone").val(),
+			// 	password:$("#password").val(),
+			// 	success:function(){
 					
+			// 	}
+			// }
+			
+			// sendAjax("php/register.php",parmes)
+			$.get("php/register.php",{
+				username:$("#phone").val(),
+			 	password:$("#password").val(),
+			},function(data){
+				if(data.code == 200){
+					alert(data.msg)
 				}
-			}
-			sendAjax("http://localhost/huawei/php/register.php",parmes)
+				if(data.code == 1000){
+					alert(data.msg)
+				}
+
+				
+
+			})
 		}
 		
 			
