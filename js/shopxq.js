@@ -34,8 +34,7 @@ var glass = (function () {
                     // 点击触发更换图片
                     _this.showImage(target.parentNode.index)
                 }
-            }
-
+                }
             // 这里用onmouseenter： 子元素不触发事件
             this.$showImage.onmouseenter = function () {
                 // 放大镜显示
@@ -97,3 +96,11 @@ var glass = (function () {
     }
 }())
 
+$(function(){
+
+
+
+
+
+
+})

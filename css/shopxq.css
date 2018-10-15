@@ -36,7 +36,8 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+img {
 	margin: 0;
 	padding: 0;
 }
@@ -58,6 +59,12 @@ a {
 body{
 	background: #f5f5f5;
 	font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif
+}
+ul,ol,li{
+list-style: none;}
+
+em{
+font-style: normal;
 }
 /*顶部*/
 /*头部*/
@@ -356,6 +363,7 @@ line-height: 1px;
 	width: 450px;
 	height: 536px;
 	position: relative;
+	float: left;
 }
 .BIG{
 	width: 450PX;
@@ -399,6 +407,7 @@ line-height: 1px;
  	width: 450px;
  	height: 68px;
     margin-top: 18px;
+
     }
 .img-box>li {
       display: inline-block;
@@ -417,7 +426,7 @@ line-height: 1px;
       border: 1px solid #ca141d;
     }
 .img-box a{
-position: absolute;
+/*position: absolute;*/
 top: 0;
 width: 30px;
 height: 68px;
@@ -425,8 +434,8 @@ cursor: pointer;
 display: inline-block;
 
 }
-.img-box a:hover{
-	background: #ccc;
+.img-box a:hover::before{
+	background: #ECECEC;
 }
 .img-box a:before{
 content: "";
@@ -434,8 +443,223 @@ width: 30px;
 height: 30px;
 display: block;
 margin-top: 19px;
+border-radius:50%;
 background: url("../img/icon50.png") no-repeat -48px -29px;;
 }
 .img-box a:nth-of-type(2)::before{
 	background-position: -79px -29px;
+}
+/*内容选择模块*/
+.shopchoose{
+float:right;
+width: 700px;
+height: 509px;
+padding-left: 30px;
+padding-bottom: 104px;
+}
+label{
+float: left;
+width: 85px;
+text-indent: 10px;
+line-height: 30px;
+}
+em{
+float: left;
+line-height: 18px;
+height: 18px;
+border: 1px solid #ca141d;
+padding: 0 6px;
+min-width: 24px;
+color: #ca141d;
+text-align: center;
+margin-right: 10px;
+margin-top: 5px;
+}
+/*第一行*/                                
+.headline>h2{
+font-size: 21px;
+height: 63px;
+overflow: hidden;
+margin-bottom: 10px;
+font-weight: 400;
+}
+/*第二行*/
+.two{
+font-size: 14px;
+padding-right: 40px;
+margin-bottom: 12px;
+position: relative;
+top: -3px;
+line-height: 20px;
+}
+.two>a{
+color: red;
+margin-right: 14px;
+text-decoration:underline;
+}
+/*第三行*/
+.three{
+background: #f5f5f5;
+padding-top: 14px;
+padding-bottom: 3px;
+height: 130px;
+margin-bottom:20px ;
+}
+.money{
+height: 30px;
+width: 700px;
+}
+.money>div{
+float: left;
+height: 30px;
+line-height: 30px;
+color: #ca141d;
+font-size: 24px;
+}
+
+.cuxiaoBOX>div{
+float: left;
+width: 615px;
+height: 92px;
+}
+.cuxiaoBOX>div>li{
+height: 30px;
+line-height: 30px;
+}
+.cuxiaoBOX img{
+width:30px;
+height:30px;
+}
+.NN{
+margin-bottom: 10px;
+height: 18px;
+}
+.NN>label{
+height: 18px;
+line-height: 18px;
+}
+.NM{
+margin-bottom: 0px;
+}
+.h_5{
+height: 5px;
+border-bottom: 1px solid #C0C0C0;
+}
+.h_16{
+height: 16px;
+}
+.chooseColor{
+height: 50px;
+
+}
+
+.chooseColor>label{
+height: 40px;
+}
+.T1>p{
+display: inline-block;
+border: 1px solid #a4a4a4;
+height: 38px;
+padding:0 12px;
+text-align: center;
+line-height: 40px;
+    border-radius: 2px;
+}
+.chooseColor img{
+margin-top: 4px;
+width: 30px;
+height: 30px;
+}
+.chooseColor span{
+    height: 34px;
+    line-height: 17px;
+    min-width: 0;
+    max-width: 86px;
+}
+
+/*选择版本*/
+.chooselog p,.chooseTC p,.safe P{
+    height: 28px;
+    line-height: 28px;
+}
+.chooselog,.chooseTC{
+height: 40px;
+}
+/*保障服务*/
+.safe{
+line-height: 30px;
+height: 30px;
+margin-bottom: 10px;
+}
+/*已购商品*/
+.chooseshop{
+height: 18px;
+line-height: 18px;
+}
+.chooseshop label{
+height: 18px;
+}
+/*加入购物车*/
+.addShopCar{
+height: 46px;
+margin-top: 10px;
+}
+.addShopCar>div:nth-child(1){
+    float: left;
+    border: 1px solid #d6d6d6;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    width: 65px;
+}
+.addShopCar input{
+	float: left;
+    width: 41px;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid #e2e2e2;
+    appearance: none;
+}
+.addShopCar>div:nth-child(1)>p{
+	width: 21px;
+	height: 43px;
+	float: left;
+}
+.addShopCar>div:nth-child(1)>p>a{
+	display: block;
+    font-size: 16px;
+    width: 21px;
+    height: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+.addShopCar>div:nth-child(1) a:first-child{
+border: 1px solid #e2e2e2;;
+}
+
+.addShopCar>div:nth-child(2)>a{
+	display: block;
+    width: 172px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    background: #fc600c;
+    margin-right: 10px;
+}
+.addShopCar>div:nth-child(2)>a:nth-child(2){
+      background: #ca151d;
+}
+.current{
+border: 1px solid #06BD04;
 }

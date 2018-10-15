@@ -1,0 +1,219 @@
+/*css reset*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,tr,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	margin: 0;
+	padding: 0;
+}
+
+b,strong {
+	font-weight: normal;
+}
+
+i,em {
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font: 16px;
+	font-weight: normal;
+}
+
+ul,dl,ol {
+	list-style: none;
+}
+
+a,u {
+	text-decoration: none;
+}
+
+img {
+	border: 0;
+	display: block;
+}
+body,html{
+    height: 100%;
+    background: #f5f5f5;
+}
+body,button,input,select,textarea{
+    font:12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+/* 所有盒子中间内容宽度 */
+.nav,.shop-car-middle,.msg-middle,.sc-empty-middle,.hot-middle{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 头部 */
+#header{
+    position: relative;
+    background: #fff;
+}
+.nav{
+    height: 30px;
+}
+.nav a{
+    color: #a4a4a4;
+}
+.nav a:hover{
+    color: #ca151d;
+}
+/* 右边 */
+.rightsidebar{
+    float: right;
+    margin-right: -9px;
+}
+.rightsidebar:first-child{
+    padding-left: 0px;
+}
+.rightsidebar li{
+    float: left;
+    padding: 0 8px;
+    line-height: 30px;
+    position: relative;
+}
+
+/* 我的购物车 */
+#shop-car{
+    position: relative;
+    padding: 10px 0px;
+    height: 50px;
+    background-color: #fff;
+}
+.shop-car-middle{
+    height: 55px;
+}
+/* 左边 */
+.shop-car-l{
+    float: left;
+}
+.shop-car-l h1{
+    float: left;
+}
+.shop-car-l h2{
+    float: left;
+    margin-left: 26px;
+    font-size: 22px;
+    line-height: 50px;
+}
+/* 右边 */
+.shop-car-r{
+    float: right;
+    margin-right: 10px;
+    width: 425px;
+    height: 50px;
+    background: rgb(175, 103, 103);
+    opacity: 0.4;
+}
+
+/* 提示消息 */
+#msg{
+    margin-top: 9px;
+    position: relative;
+    padding: 1px;
+}
+.msg-middle{
+    line-height: 48px;
+}
+.mas-content{
+    height: 48px;
+    color: #ca141d;
+    background: #fffdee;
+    border: 1px solid #eace85;
+}
+.mas-content .hw-login-tip{
+    margin-left: 20px;
+    margin-right: 6px;
+    font-size: 12px;
+}
+.btnOk{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background: #ca141d;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+
+/* 购物车 */
+#sc-empty{
+    position: relative;
+    margin-top: 20px;
+}
+.sc-empty-middle{
+    height: 500px;
+    background-color: #fff;
+    text-align: center;
+}
+.sc-empty-middle h3{
+    height: 100px;
+    margin: 0 auto 36px;
+    padding-top: 135px;
+}
+.sc-empty-middle .hw-gouwuche1{
+    font-size: 100px;
+    color: #ccc;
+    line-height: 100px;
+}
+.sc-empty-middle p{
+    font-size: 18px;
+    color: #a4a4a4;
+    margin-bottom: 16px;
+}
+.sc-empty-middle a{
+    width: 172px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    background: #ca141d;
+    border-radius: 2px;
+}
+
+/* 热销 */
+#hot{
+    position: relative;
+}
+.hot-title{
+    color: #3a3a3a;
+    font-size: 18px;
+    line-height: 1;
+    margin: 30px 0 10px;
+}
+.hot-container{
+    position: relative;
+    padding: 20px 10px 18px;
+    overflow: hidden;
+    background: #fff;
+    text-align: center;
+}
+.hot-container li{
+    float: left;
+    width: 222px;
+    height: 200px;
+}
+.hot-container li img{
+    height: 134px;
+    width: 134px;
+    margin: 0 auto;
+}
+.hot-container p{
+    height: 40px;
+    margin: 6px auto 0;
+    width: 160px;
+}
+.hot-container span{
+    display: block;
+    font-size: 14px;
+    padding: 6px 0 0;
+    line-height: 1;
+}
+
+
+/* 页脚 */
+#footer{
+   background-color: #F0F0F0;
+}
