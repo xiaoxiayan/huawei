@@ -319,9 +319,11 @@ font-style: normal;
 	height: 260px;
 	position: absolute;
 	top:60px;
-	/*background: #00B5E2;*/
+	background: #FFF;
 	left: -273px;
 	display: none;
+	z-index: 10;
+	
 }
 /*高度盒子*/
 .h_10{
@@ -378,22 +380,23 @@ line-height: 1px;
 }
 .fig{
 	position: absolute;
-     left: 0;
-      top:0;
-      width: 150px;
-      height: 150px;
-      background: rgba(0,0,0,0.1);
-      cursor: move;
+    left: 0;
+    top:0;
+    width: 150px;
+    height: 150px;
+    background: rgba(0,0,0,0.1);
+    cursor: move;
       display: none;
 }
 .MAX{
 	position: absolute;
       left: 450px;
       top: 0;
-      width: 480px;
-      height: 480px;
+      width: 400px;
+      height: 400px;
       overflow: hidden;
       border: 1px solid #eee;
+      z-index: 100;
       display: none;
 }
 .MAX img{
@@ -417,12 +420,12 @@ line-height: 1px;
       height: 60px;
       
     }
-    .img-box>li img{
+.img-box>li img{
       max-width: 100%;
       max-height: 100%;
     }
-    .img-box>li:hover,
-    .img-box>li.active {
+.img-box>li:hover,
+.img-box>li.active {
       border: 1px solid #ca141d;
     }
 .img-box a{
@@ -572,15 +575,19 @@ height: 30px;
 }
 .chooseColor span{
     height: 34px;
-    line-height: 17px;
-    min-width: 0;
-    max-width: 86px;
+    text-align: center;
+    display: inline-block;
+    vertical-align:top;
 }
-
 /*选择版本*/
-.chooselog p,.chooseTC p,.safe P{
+.chooselog p,.chooseTC p,.safe p{
     height: 28px;
     line-height: 28px;
+	vertical-align: middle;
+}
+/*所有选择的hover*/
+.chooselog p:hover,.chooseTC p:hover,.safe p:hover,.chooseColor p:hover{
+	border: 1px solid #312E3D;
 }
 .chooselog,.chooseTC{
 height: 40px;
@@ -663,3 +670,75 @@ border: 1px solid #e2e2e2;;
 .current{
 border: 1px solid #06BD04;
 }
+
+/*选择商品点击后的样式*/
+.CL{
+	border:1px solid red!important;
+	}
+.chooseshop p{
+	color: red;
+	line-height: 18px;
+}
+.chooseshop>label{
+	line-height: 18px;
+}
+/*成功加入购物车后*/
+.successAdd{
+	width:100%;
+	height:100%;
+	background:#888888;
+	opacity:0.4;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: #000;
+    display: none;
+    z-index: 99;
+}
+.minbox{
+	position:fixed;
+	top:40%;
+	left:30%;
+	width: 458px;
+	height: 185px;
+	border:1px solid #cecece;
+	background: #fff;
+	text-align: center;
+    display: none;
+	z-index: 100;
+
+}
+.minbox p{
+	color: #444;
+    font-size: 18px;
+    width: 348px;
+    height: 81px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10%;
+
+}
+.minbox a{
+	display: inline-block;
+    min-width: 170px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 18px;
+    margin: 0 5px;
+    white-space: nowrap;
+    border-radius: 2px;
+	
+}
+.close{
+	position: absolute;
+	right:5%;
+	top:5%;
+	min-width: 15px!important;
+	height:14px!important;
+	line-height:14px!important;
+	font-size: 14px!important;
+	
+}
+

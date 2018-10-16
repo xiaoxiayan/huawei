@@ -1,3 +1,4 @@
+//放大镜
 var glass = (function () {
     return {
         // x为放大倍数
@@ -58,8 +59,8 @@ var glass = (function () {
             this.$showImage.onmousemove = function (ev) {
                 ev = ev || window.event;
                 // 计算小方块定点坐标
-                var x = ev.clientX - this.offsetLeft - _this.$filter.offsetWidth / 2;
-                var y = ev.clientY - this.offsetTop - _this.$filter.offsetHeight / 2;
+                var x = ev.clientX - this.offsetLeft - _this.$filter.offsetWidth ;
+                var y = ev.clientY - this.offsetTop - _this.$filter.offsetHeight ;
                 // 获取小方块移动的最大坐标
                 var maxL = this.clientWidth - _this.$filter.offsetWidth,
                     maxT = this.clientHeight - _this.$filter.offsetHeight;
@@ -97,10 +98,64 @@ var glass = (function () {
 }())
 
 $(function(){
-
-
-
-
-
-
+//	鼠标滑过导航,出现盒子推荐,
+$(".headerCenter a").mouseenter(function(event){
+		$("#showOfheader").slideDown("fast")
+})
+$(".headerCenter").mouseleave(function(){
+	
+	$("#showOfheader").slideUp("fast")
+})
+var txt = ''
+$(".XZ p").click(function(event){
+	var target = $(event.target);
+	$(this).parent().find("p").removeClass("CL");
+	$(this).addClass("CL");
+	var s1 =$(".chooselog .CL").text();
+	var s2 =$(".chooseColor .CL").text();
+	var s3 =$(".chooseTC .CL").text()
+	$(".chooseshop span").text(`${s2} / ${s1} / ${s3}`)
+	$(".headline h2").text(`荣耀Note10 ${s1} ${s2} AMOLED全面屏手机 AI智能 GT游戏加速 双卡双待 长续航`)
+})
+$(".addShopCar a").click(function(event){
+	var target = $(event.target);
+	var num = Number($("#shu").val())
+	if(target.is(".add")){
+	num++
+	$("#shu").val(num)
+	}
+	if(target.is(".reduce")){
+		num--
+	$("#shu").val(num)
+	}
+})
+var shopList = localStorage.shopList || '[]';
+shopList = JSON.parse(shopList);
+$(".adds").click(function(){
+//购物车功能
+var add = true;	
+	var obj ={
+		Cp:($(".chooseshop span").text()),
+		geshu:Number($("#shu").val()),
+	}
+	for(var i = 0;i<shopList.length;i++){
+		if(obj.Cp == shopList[i].Cp){
+			add = false
+			shopList[i].geshu += obj.geshu;
+			break;
+		}
+	}
+	if(add){
+		shopList.push(obj);
+	}
+	localStorage.shopList = JSON.stringify(shopList);
+	console.log(localStorage.shopList);
+	$(".minbox p").text(`${$(".headline h2").text()}成功加入购物车`)
+	$(".successAdd").show()
+	$(".minbox").show()
+})
+$(".close,.tomore,.toshopCar").click(function(){
+	$(".successAdd").hide()
+	$(".minbox").hide()
+})
 })

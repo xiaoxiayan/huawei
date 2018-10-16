@@ -15,18 +15,7 @@ $(function(){
 			$(".phoneover").css("display","block")
 		}
 		else{
-			// console.log($("#phone").val(),$("#password").val())
-			// var parmes={
-			// 	method:'GET',
-			// 	username:$("#phone").val(),
-			// 	password:$("#password").val(),
-			// 	success:function(){
-					
-			// 	}
-			// }
-			
-			// sendAjax("php/register.php",parmes)
-			$.get("php/register.php",{
+			$.post("http://localhost:2048/huawei/php/register.php",{
 				username:$("#phone").val(),
 			 	password:$("#password").val(),
 			},function(data){
@@ -36,9 +25,6 @@ $(function(){
 				if(data.code == 1000){
 					alert(data.msg)
 				}
-
-				
-
 			})
 		}
 		

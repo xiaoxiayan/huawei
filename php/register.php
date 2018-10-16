@@ -6,11 +6,10 @@
     include "public/connect_db.php";
     // 或去json数据, 请求主体的格式为json格式
     // $json = file_get_contents("php://input");
-    $username = $_GET["username"];
-    $password = $_GET["password"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
     // $username = $json -> username;
     // $password = $json -> password;
-
     // // 链接数据库
     $coon = new db();
     $sql = "select * from www WHERE username='$username'";
