@@ -6,7 +6,7 @@
 		$(".bannerRelative").hide()
 	})
 //	轮播大
-	var fade =function(){
+	var fade =(function(){
 		$dotBox = $('.bannerdown');
 		$imgBox = $('#box');
 		var timer;
@@ -46,7 +46,8 @@
 				});
 			}
 		}
-	}
+	}())
+	fade.init()
 //	控制精彩推荐
 $(".JPshow").mouseenter(function(event){
 	var width =event.target.parentElement.children.length;
@@ -65,6 +66,7 @@ $(".JPshow").mouseenter(function(event){
 			}	
 			});
 		}
+	})
 })
 //    自动小轮播
 //var fade2 = function(){
