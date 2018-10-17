@@ -646,7 +646,7 @@ margin-top: 10px;
     font-weight: bold;
 }
 .addShopCar>div:nth-child(1) a:first-child{
-border: 1px solid #e2e2e2;;
+border: 1px solid #e2e2e2;
 }
 
 .addShopCar>div:nth-child(2)>a{
@@ -739,6 +739,5 @@ border: 1px solid #06BD04;
 	height:14px!important;
 	line-height:14px!important;
 	font-size: 14px!important;
-	
 }
 

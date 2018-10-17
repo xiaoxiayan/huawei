@@ -137,7 +137,10 @@ var add = true;
 	var obj ={
 		Cp:($(".chooseshop span").text()),
 		geshu:Number($("#shu").val()),
+		money:2799.00*Number($("#shu").val()),
+		name:$(".headline h2").text()
 	}
+	console.log(obj);
 	for(var i = 0;i<shopList.length;i++){
 		if(obj.Cp == shopList[i].Cp){
 			add = false

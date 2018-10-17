@@ -137,14 +137,17 @@ body,button,input,select,textarea{
 
 
 /* 购物车 */
+
 #sc-empty{
     position: relative;
     margin-top: 20px;
 }
+/*没有商品的时候*/
 .sc-empty-middle{
     height: 500px;
     background-color: #fff;
     text-align: center;
+    display: none;
 }
 .sc-empty-middle h3{
     height: 100px;
@@ -172,7 +175,133 @@ body,button,input,select,textarea{
     background: #ca141d;
     border-radius: 2px;
 }
-
+/*有商品的时候*/
+.showShop{
+	width: 1200px;
+	margin: auto;
+}
+/*数据头*/
+.tou{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+    padding-left: 40px;
+    color: #a4a4a4;
+}
+.tou li{
+	float: left;
+	width: 100px;
+	margin-left:30px;
+	text-align: center;
+	line-height: 40px;
+}
+.tou li:nth-child(1){
+	width: 150px;
+	margin:0;
+	text-align: left;
+}
+.tou li:nth-child(2){
+	width:450px;
+	margin:0;
+	text-align: left;
+}
+/*数据内容*/
+.shopliebiao{
+	margin: auto;
+	min-height: 100px;
+	margin-top: 10px;
+}
+.shop_box{
+	width: 1200px;
+	height:382px;
+	background: #fff;
+	margin-top: 10px;
+}
+.shop_details{
+	width: 1160px;
+	height: 362px;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+.shop_details>a{
+	float: left;
+	margin-right: 20px;
+	margin-left: 18px;
+}
+.shop_details ul{
+	float: left;
+	height: 48px;
+	width: 970px;
+}
+.shop_details li{
+	float: left;
+		font-size: 14px;
+}
+.shop_details li:nth-child(1){
+	width: 450px;
+	height: 48px;
+}
+.shop_details li:nth-child(2){
+	height: 21px;
+	width: 140px;
+	text-align: center;
+	margin-left: 30px;
+}
+.shop_details li:nth-child(3){
+	width: 100px;
+	height: 46px;
+	margin-left: 30px;
+}
+.KZnum{
+	width: 65px;
+	height: 43px;
+	border: 1px solid #d6d6d6;
+}
+.KZnum p{
+	width: 21px;
+	height: 43px;
+	float: left;
+	
+}
+.KZnum input{
+	float: left;
+    width: 41px;
+    height: 43px;
+    line-height: 44px;
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid #e2e2e2;
+    appearance: none;
+}
+.KZnum a{
+	display: block;
+    font-size: 16px;
+    width: 21px;
+    height: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #777;
+    font-weight: bold;
+}
+.KZnum a:first-child{
+border: 1px solid #e2e2e2;
+}
+.Tmoney
+{
+	width: 100px;
+	height: 21px;
+	margin-left: 30px;
+	color: #ca141d;
+    font-weight: 700;
+}
+.shop_details li:last-child{
+	width: 50px;
+	height: 21px;
+	margin-left: 40px;
+	color: red;
+	
+}
 /* 热销 */
 #hot{
     position: relative;
