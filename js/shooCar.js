@@ -7,23 +7,24 @@ $(function(){
 //			$(".showShop").hide()
 //		}
 //	}())
-
-var shopList = localStorage.shopList || '[]';	
-shopList = JSON.parse(shopList);
-	if(shopList == undefined){
+	if(localStorage.shopList == undefined){
 	$(".sc-empty-middle").show();
+	$(".showShop").hide();
 	}else{
-	$(".sc-empty-middle").hide()
+	var shopList = localStorage.shopList || '[]';	
+	shopList = JSON.parse(shopList);
+	$(".sc-empty-middle").hide();
+	$(".showShop").show();
 	var arr =[]
 		for(var i = 0 ; i<shopList.length;i++){
 			arr.push(`<div class="shop_box">
       					<div class="shop_details">
         				<a href="###"><img src="img/100_100_1537234343259mp.jpg" alt="" /></a>
-        		<ul>
+        		<ul class="uu">
         			<li class="name">${shopList[i].name}</li>
         			<li>￥2799</li>
         			<li><div class="KZnum">
-								<input type="text" name="" id="shu" value="${shopList[i].geshu}"/>
+								<input type="text" name="" class="shu" value="${shopList[i].geshu}"/>
 								<p>
 									<a href="###" class="add">+</a>
 									<a href="###" class="reduce">-</a>
@@ -40,27 +41,27 @@ shopList = JSON.parse(shopList);
 		$(".tou").after(arr)
 	}
 //	添加商品
-$(".shop_details ul").mouseenter(function(event){
-	var target = $(event.target);
-	$(this).addClass("index");
-	$(".index a").on("click",function(event){
-	var target2 = $(event.target);
-	var num = Number($("#shu").val())
-	if(target2.is(".add")){
-		console.log(1)
+   	 $(".KZnum a").on("click",function(event){
+//	var target = $(event.target);
+	var $shu  = $(this).closest('.KZnum').find('.shu');
+//	var num =Number($(this).closest('.KZnum').find('.shu').val());
+	var num = Number($shu.val())
+	if($(this).is(".add")){
 	num++
-	$("#shu").val(num)
 	}
-	if(target2.is(".reduce")){
-		num--
-	$("#shu").val(num)
+	if(num > 1){
+	if($(this).is(".reduce")){
+	num--
 	}
-	$('.index .Tmoney').text(`￥ ${2799*Number($("#shu").val())}`)	
+	}else{
+		$(this).css('cursor','default');
+	}
+	$shu.val(num)
+	$(this).closest('.uu').find('.Tmoney').text(`￥ ${2799*num}`);
 })
-})
+   	$(".shu").blur(function(){
+	var num =Number($(this).closest('.KZnum').find('.shu').val());
+   	$(this).closest('.uu').find('.Tmoney').text(`￥ ${2799*num}`);
+   	})
 	
-   	$(".shop_details ul").mouseleave(function(event){
-   		$(this).removeClass("index");
-})
-   	
 })

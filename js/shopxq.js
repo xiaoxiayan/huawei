@@ -131,24 +131,25 @@ $(".addShopCar a").click(function(event){
 })
 var shopList = localStorage.shopList || '[]';
 shopList = JSON.parse(shopList);
-$(".adds").click(function(){
 //购物车功能
-var add = true;	
+$(".adds").click(function(){
+	var add = true;	
 	var obj ={
 		Cp:($(".chooseshop span").text()),
 		geshu:Number($("#shu").val()),
 		money:2799.00*Number($("#shu").val()),
 		name:$(".headline h2").text()
 	}
-	console.log(obj);
 	for(var i = 0;i<shopList.length;i++){
 		if(obj.Cp == shopList[i].Cp){
 			add = false
 			shopList[i].geshu += obj.geshu;
+			shopList[i].money += obj.money
 			break;
 		}
 	}
 	if(add){
+		console.log(obj);
 		shopList.push(obj);
 	}
 	localStorage.shopList = JSON.stringify(shopList);
