@@ -63,5 +63,19 @@ $(function(){
 	var num =Number($(this).closest('.KZnum').find('.shu').val());
    	$(this).closest('.uu').find('.Tmoney').text(`￥ ${2799*num}`);
    	})
-	
+	$(".caoz").click(function(){
+		for(var i = 0 ; i<shopList.length;i++){
+			if($(this).closest('.uu').find('.name').text() == shopList[i].name){
+				 var arr = [];
+                  		arr = JSON.parse(localStorage.shopList);
+                       arr.splice(i,1);
+                      localStorage.shopList = JSON.stringify(arr);
+                      console.log(localStorage.shopList)
+                      break;
+			}
+			
+		}
+		
+		$(this).closest('.shop_box').remove();
+	})
 })

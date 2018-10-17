@@ -114,8 +114,13 @@ $(".XZ p").click(function(event){
 	var s1 =$(".chooselog .CL").text();
 	var s2 =$(".chooseColor .CL").text();
 	var s3 =$(".chooseTC .CL").text()
-	$(".chooseshop span").text(`${s2} / ${s1} / ${s3}`)
-	$(".headline h2").text(`荣耀Note10 ${s1} ${s2} AMOLED全面屏手机 AI智能 GT游戏加速 双卡双待 长续航`)
+	$(".chooseshop span").text(`${s2} / ${s1} / ${s3}`);
+	console.log(s3);
+	if(s3 == '官方标配'){
+		$(".headline h2").text(`荣耀Note10 ${s1} ${s2} AMOLED全面屏手机 AI智能 GT游戏加速 双卡双待 长续航`)
+	}else{
+		$(".headline h2").text(`荣耀Note10 ${s1} ${s2} ${s3}`)
+	}
 })
 $(".addShopCar a").click(function(event){
 	var target = $(event.target);
