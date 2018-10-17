@@ -25,7 +25,7 @@ var glass = (function () {
         event: function () {
             var _this = this;
             // 利用事件委托，给每一个li添加点击事件
-            this.$ulbox.onclick = function (ev) {
+            this.$ulbox.onmousemove = function (ev) {
                 ev = ev || window.event;
                 var target = ev.target || ev.srcElement;
                 console.log(target.nodeName);
@@ -106,6 +106,7 @@ $(".headerCenter").mouseleave(function(){
 	
 	$("#showOfheader").slideUp("fast")
 })
+//选择想要的商品
 var txt = ''
 $(".XZ p").click(function(event){
 	var target = $(event.target);
@@ -115,13 +116,22 @@ $(".XZ p").click(function(event){
 	var s2 =$(".chooseColor .CL").text();
 	var s3 =$(".chooseTC .CL").text()
 	$(".chooseshop span").text(`${s2} / ${s1} / ${s3}`);
-	console.log(s3);
 	if(s3 == '官方标配'){
 		$(".headline h2").text(`荣耀Note10 ${s1} ${s2} AMOLED全面屏手机 AI智能 GT游戏加速 双卡双待 长续航`)
 	}else{
 		$(".headline h2").text(`荣耀Note10 ${s1} ${s2} ${s3}`)
 	}
 })
+
+//选择颜色改变图片内容
+//感觉可以两个盒子
+//$(".chooseColor p").click(function(){
+//	if($(this).text() == '幻夜黑'){
+//		$(".img-box img")
+//	}
+//}
+//)
+	
 $(".addShopCar a").click(function(event){
 	var target = $(event.target);
 	var num = Number($("#shu").val())
