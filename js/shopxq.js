@@ -28,7 +28,6 @@ var glass = (function () {
             this.$ulbox.onmousemove = function (ev) {
                 ev = ev || window.event;
                 var target = ev.target || ev.srcElement;
-                console.log(target.nodeName);
                 // 点击时，真正触发的为图片。
                 if (target.nodeName === 'IMG') {
                     // 获取li的索引 =》target.parentNode.index
@@ -59,8 +58,8 @@ var glass = (function () {
             this.$showImage.onmousemove = function (ev) {
                 ev = ev || window.event;
                 // 计算小方块定点坐标
-                var x = ev.clientX - this.offsetLeft - _this.$filter.offsetWidth ;
-                var y = ev.clientY - this.offsetTop - _this.$filter.offsetHeight ;
+                var x = ev.clientX - this.offsetLeft - _this.$filter.offsetWidth /1.5 ;
+                var y = ev.clientY - this.offsetTop - _this.$filter.offsetHeight /1.5;
                 // 获取小方块移动的最大坐标
                 var maxL = this.clientWidth - _this.$filter.offsetWidth,
                     maxT = this.clientHeight - _this.$filter.offsetHeight;
@@ -83,7 +82,6 @@ var glass = (function () {
             }
         },
         showImage: function (index) {
-            console.log(index);
             for (var i = 0; i < this.$liAll.length; i++) {
                 this.$liAll[i].className = ''
             }
@@ -92,8 +90,8 @@ var glass = (function () {
             var src = this.$liAll[index].querySelector('img').getAttribute('src');
             this.$showImage.querySelector('img').src = src.replace('78_78', '428_428');
             this.$showBigImage.querySelector('img').src = src.replace('78_78', '800_800');
-            console.log(src);
-        }
+        },
+        
     }
 }())
 
@@ -125,12 +123,19 @@ $(".XZ p").click(function(event){
 
 //选择颜色改变图片内容
 //感觉可以两个盒子
-//$(".chooseColor p").click(function(){
-//	if($(this).text() == '幻夜黑'){
-//		$(".img-box img")
-//	}
-//}
-//)
+$(".chooseColor p").click(function(){
+	if($(this).text() == '幻夜黑'){
+		var arr=$(".img-box li").children("img")
+		console.log($(".img-box li").children("img"))
+		for(var i =1 ;i<arr.length+1;i++){
+		$(".img-box li").children("img").attr('src',arr[i].getAttribute('src').replace(`a${i}`,`b${i}`)) 
+		console.log(arr[i].getAttribute('src').replace(`a${i}`,`b${i}`),$(".img-box li").children("img"))
+		}
+		
+
+	}
+}
+)
 	
 $(".addShopCar a").click(function(event){
 	var target = $(event.target);
@@ -164,11 +169,9 @@ $(".adds").click(function(){
 		}
 	}
 	if(add){
-		console.log(obj);
 		shopList.push(obj);
 	}
 	localStorage.shopList = JSON.stringify(shopList);
-	console.log(localStorage.shopList);
 	$(".minbox p").text(`${$(".headline h2").text()}成功加入购物车`)
 	$(".successAdd").show()
 	$(".minbox").show()
