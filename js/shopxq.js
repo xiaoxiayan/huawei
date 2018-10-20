@@ -125,14 +125,9 @@ $(".XZ p").click(function(event){
 //感觉可以两个盒子
 $(".chooseColor p").click(function(){
 	if($(this).text() == '幻夜黑'){
-		var arr=$(".img-box li").children("img")
-		console.log($(".img-box li").children("img"))
-		for(var i =1 ;i<arr.length+1;i++){
-		$(".img-box li").children("img").attr('src',arr[i].getAttribute('src').replace(`a${i}`,`b${i}`)) 
-		console.log(arr[i].getAttribute('src').replace(`a${i}`,`b${i}`),$(".img-box li").children("img"))
-		}
-		
-
+			$(".img-box li").children("img").each(function(i){
+				this.src='img/78_78_b'+(i+1)+'.jpg'
+			})
 	}
 }
 )
