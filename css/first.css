@@ -265,7 +265,9 @@ body{
 	justify-content:space-between;
 	height:50px;
 	padding:10px 0;
-	
+}
+.topHeader{
+	width: 548px;
 }
 .headerCenter{
 	line-height:50px;
@@ -273,7 +275,7 @@ body{
 	font-size: 16px;
 	display: flex;
 	justify-content:space-around;
-	width: 548px;
+	/*width: 548px;*/
 	
 }
 .headerCenter>a>span{
@@ -622,7 +624,7 @@ position: absolute;
 
 }
  .img1{
-       width: 148px;
+    width: 148px;
     height: 148px;
     margin-top: 28px;
 }
@@ -646,7 +648,7 @@ font-size: 14px;
 .grid-desc{
     font-size: 12px;
     font-weight: 400;
-    margin: 2px 20px 6px;
+    margin: 4px 20px 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -806,7 +808,6 @@ background: #f5f5f5;
 	float: left;
 }
 .f2{
-	
 	font-size: 16px;
 	display: inline-block;
 	height: 36px;
@@ -841,7 +842,6 @@ background: #f5f5f5;
 .down{
 	width: 1212px;
 	margin-left: -12px;
-
 }
 
 .down>li{
@@ -852,6 +852,16 @@ background: #f5f5f5;
 	margin-top: 12px;
 	text-align: center;
 	background: #fff;
+}
+.down>li .img1{
+	width: 178px;
+	height: 178px;
+}
+.down>li div{
+	margin-top:20px;
+	font-size: 14px;
+    font-weight: 400;
+    color: #3a3a3a;
 }
 .IMG_down2{
 	height: 18px;
@@ -885,7 +895,11 @@ color: #3A3A3A;
 .down>li:hover{
 	transform: translate3d(0px,-2px,0px);
 }
-
+.down>li>a:last-child{
+	font-size: 14px;
+    font-weight: 400;
+    color: #cc0e11;
+}
 /*最后*/
 .songli{
 	width:1200px;
