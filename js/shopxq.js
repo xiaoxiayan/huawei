@@ -129,6 +129,11 @@ $(".chooseColor p").click(function(){
 				this.src='img/78_78_b'+(i+1)+'.jpg'
 			})
 	}
+	if($(this).text() == '幻影蓝'){
+			$(".img-box li").children("img").each(function(i){
+				this.src='img/78_78_a'+(i+1)+'.jpg'
+			})
+	}
 }
 )
 	
